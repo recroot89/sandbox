@@ -1,0 +1,13 @@
+update SysPackage
+set IsChanged = 1, InstallType = 0, IsLocked = 1, Maintainer = 'Customer'
+where Name in ('NUI')
+and SysWorkspaceId in (select Id from SysWorkspace where Name = 'Default')
+--разблокировать схему "BaseSectionV2Css" в пакете "NUI"
+update SysSchema
+set IsChanged = 1,
+IsLocked = 1
+where Name in ('LeftPanelTopMenuModule')
+and SysPackageId in (
+    select Id from SysPackage where SysWorkspaceId in (select Id from SysWorkspace where Name = 'Default')
+    and Name in ('NUI')
+)

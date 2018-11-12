@@ -1,0 +1,50 @@
+{
+  "startPrice": 25000,
+  "yearPayment": 6000,
+  "payment": [{
+      "tax": "10%",
+      "years": 6,
+      "haveToPay": 33996
+    },
+    {
+      "tax": "11%",
+      "years": 6,
+      "haveToPay": 35284
+    },
+    {
+      "tax": "12%",
+      "years": 7,
+      "haveToPay": 36732
+    },
+    {
+      "tax": "13%",
+      "years": 7,
+      "haveToPay": 38385
+    },
+    {
+      "tax": "14%",
+      "years": 7,
+      "haveToPay": 40175
+    },
+    {
+      "tax": "15%",
+      "years": 8,
+      "haveToPay": 42113
+    },
+    {
+      "tax": "16%",
+      "years": 8,
+      "haveToPay": 44520
+    },
+    {
+      "tax": "17%",
+      "years": 8,
+      "haveToPay": 47148
+    },
+    {
+      "tax": "18%",
+      "years": 9,
+      "haveToPay": 50368
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "authors": [
+    {
+      "author": "Miguel de Cervantes",
+      "books": [
+        {
+          "title": "Don Quixote",
+          "description": "Alonso Quixano, a retired country gentleman in his fifties"
+        }
+      ]
+    },
+    {
+      "author": "Fyodor Dostoyevsky",
+      "books": [
+        {
+          "title": "Crime and Punishment",
+          "description": "It is a murder story, told from a murders point of view"
+        },
+        {
+          "title": "The Brothers Karamazov",
+          "description": "Dostoevsky's last and greatest novel, The Karamazov Brothers"
+        }
+      ]
+    },
+    {
+      "author": "Homer",
+      "books": [
+        {
+          "title": "The Odyssey",
+          "description": "The Odyssey is one of two major ancient Greek epic poems attributed to Homer"
+        }
+      ]
+    }
+  ]
+}

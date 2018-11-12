@@ -1,0 +1,37 @@
+javascript:
+  | $(document).ready(() => {
+      | $("#my-modal").modal('show');
+  | });
+
+= link_to 'modal', "javascript:void(0)", 'data-target': "#myModal", 'data-toggle': "modal", class: 'btn btn-primary'
+#myModal.modal.fade aria-labelledby="myModalLabel" role="dialog" tabindex="-1" 
+  .content.container-fluid
+    .container.voucher
+      .modal-dialog role="document" 
+        .modal-content
+          .modal-header
+            h2.font-weight-bold
+              span.text-success #{t('voucher')}: #{@voucher.code}
+            button.close aria-label="Close" data-dismiss="modal" type="button" 
+              span aria-hidden="true"  &times;
+          .modal-body
+            table.table-striped.table-bordered.table
+              tbody
+                  tr
+                    td.font-weight-bold = t('.token')
+                    td.font-weight-bold= @voucher.token
+                  tr
+                    td.font-weight-bold = t('user_id')
+                    td= @voucher.formatted_user_id
+                  tr
+                    td.font-weight-bold = t('currency')
+                    td= @voucher.currency
+                  tr
+                    td.font-weight-bold = t('amount')
+                    td= @voucher.formatted_amount
+                  tr
+                    td.font-weight-bold = t('.direct_link')
+                    td= link_to voucher_url(@voucher), voucher_path(@voucher)
+
+            = link_to 'OK', "javascript:void(0)", 'data-dismiss': "modal", class: 'btn btn-primary'
+          
