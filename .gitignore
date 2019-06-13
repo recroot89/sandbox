@@ -1,4 +1,5 @@
 /node_modules/
+.bloop
 *.log
 dist
 flow-typed
@@ -7,3 +8,4 @@ flow-typed
 .vscode
 .metals
 /target/
+/project/
