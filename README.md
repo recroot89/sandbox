@@ -1,4 +1,4 @@
-## Setup
+## Sandbox (js, ruby, python, scala)
 
 ```sh
 $ make install
